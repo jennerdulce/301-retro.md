@@ -1,4 +1,4 @@
-# 301-retro.md
+# Retro 1: 301-retro.md
 
 ## SMACSS and Responsive Web Design
 ### 1. What went well, that I might forget if I don’t write down?
@@ -21,7 +21,7 @@
 - How padding and text content will effect the sizing and dimensions of everything.
 
 
-## jQuery, Events, and The DOM
+## Retro 2: jQuery, Events, and The DOM
 ### 1. What went well, that I might forget if I don’t write down?
 - A-synchronization: other code will continue to run while the .ajax method retrieves the JSON data. Trying to render/work with data at this point may be undefined because the render methods are trying to work with data that has not finished processing yet
 - When cloning a template, use .find('element within template') to target the elements in the clone.
@@ -40,3 +40,30 @@
 - ajax/then methods
 - arrow function
 - forEach functions
+
+## Retro 3: Flexbox and Templating
+### 1. What went well, that I might forget if I don’t write down?
+- Mustache {{ }}
+- STEPS:
+1. Add CDN
+2. Create Script with id="unique template name" type="x-tmpl-mustache"
+3. Make variable and target the template (which is a script)
+4. Make a variable and run the Mustache.render(insert template, { add keys and values for template }
+5. Append to where you want the script to be displayed
+- Setting a variable to the value of a button selected on event listeners
+- Adding multiple classes on an element
+- Hiding/showing what you want based on .hide() and .show() classes
+- .empty() and rerender
+- Sort Functions
+- you can a return statement at the beginning instead of at the end
+
+### 2. What did I learn today?
+- Mustache
+- Flexbox
+- Sorting objects
+
+### 3. What should I do differently next time?
+- Take one step at a time and know your code so you know where to look and how to fix problems
+
+### 4. What still puzzles me, or what do I need to learn more about?
+- How to make all sorting options work with each other
