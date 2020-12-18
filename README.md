@@ -67,3 +67,22 @@
 
 ### 4. What still puzzles me, or what do I need to learn more about?
 - How to make all sorting options work with each other
+
+
+## Retro 4: Responsive Web Design and RegEx
+### 1. What went well, that I might forget if I don’t write down?
+- When using Grid or Flexbox. You do not need to set any widths or heights.
+- Make sure that boxes or elements you want to align are directly a child of a parent container that has been set to display: grid/flexbox
+- When using a forEach for REGEX. matching returns an ARRAY with a single value in it (the cities problem). When you retrieve the information, you have to access it by the index at [0].
+    - Note: There will only be 1 item in the array so thats why you always have to access the value at 0
+
+### 2. What did I learn today?
+- Grid is great. I used grid-template-area and worked like magic.
+- Regex is confusing
+
+### 3. What should I do differently next time?
+- I tried to refactor the code I previously had. It was better to just completely start over
+
+### 4. What still puzzles me, or what do I need to learn more about?
+- REGEX: Remember to use if statements
+- Remember that you can create more than 1 regex criteria and use both to filter out data that you want.
