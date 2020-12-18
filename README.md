@@ -1,6 +1,6 @@
-# Retro 1: 301-retro.md
+# 301-retro.md
 
-## SMACSS and Responsive Web Design
+## Retro 1: and Responsive Web Design
 ### 1. What went well, that I might forget if I don’t write down?
 ```
 @media (max-width: #){
