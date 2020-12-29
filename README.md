@@ -86,3 +86,34 @@
 ### 4. What still puzzles me, or what do I need to learn more about?
 - REGEX: Remember to use if statements
 - Remember that you can create more than 1 regex criteria and use both to filter out data that you want.
+
+
+## Retro 5: Heroku Deployment
+### 1. What went well, that I might forget if I don’t write down?
+- .slice()
+- .split()
+-.join()
+
+### 2. What did I learn today?
+- That CSS can get very messy if you do not separate code into mutiple CSS files.
+
+### 3. What should I do differently next time?
+- Alter 1 thing at a time
+- Make sure that I keep chunks of code together so that it is more organized
+
+### 4. What still puzzles me, or what do I need to learn more about?
+- How to build a server and what each line means when building it.
+
+
+## Retro 6: NODE, EXPRESS, and APIs
+### 1. What went well, that I might forget if I don’t write down?
+- How to build a server. However, this skill will continue to be developed for the rest of the cirriculum
+
+### 2. What did I learn today?
+- I learned that we are able to access input through AJAX SETTINGS that is in the app.js file in the front it. Data must be in AJAX settings in order to be retrieved in the backend.
+
+### 3.What should I do differently next time?
+- Nothing I feel I should do differently next time. Had a good understanding and the lab went smoothly
+
+### 4.What still puzzles me, or what do I need to learn more about?
+- Exactly what each part does. We learned specific commands but would like a more in-depth explanation as to how things work. Or is it just better to accept the backend magic?
