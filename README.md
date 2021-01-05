@@ -117,3 +117,18 @@
 
 ### 4.What still puzzles me, or what do I need to learn more about?
 - Exactly what each part does. We learned specific commands but would like a more in-depth explanation as to how things work. Or is it just better to accept the backend magic?
+
+
+## Retro 7: APIs
+### 1. What went well, that I might forget if I don’t write down?
+- 
+
+### 2. What did I learn today?
+- 
+
+### 3.What should I do differently next time?
+- 
+
+### 4.What still puzzles me, or what do I need to learn more about?
+- 
+
