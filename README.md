@@ -121,14 +121,30 @@
 
 ## Retro 7: APIs
 ### 1. What went well, that I might forget if I don’t write down?
-- 
+- Things you need to use an API:
+    1. within handler that you want
+    2. create key variable with process.env.KEYNAME
+    3. create a url variable with API URL and insert keyname and other url parameters you may need
+    4. import superagent and request using `superagent.get(url)`
+- how to use REGEX:
+    1. create regex variable: `let regex = / /g
+    2. create string (if needed)
+    3. use `regex.test(string)` or `string.match(regex)`
 
 ### 2. What did I learn today?
-- 
+- superagent is used to talk to APIs
+    - request data and in hopes to receive a promise
+    - we BUILD the requet within the `.then()` method within the superagent request
+- use `.filter()` to filter out the items/objects you need within a big database
+    - USE REGEX
+    - filter only returns whole items
+    - cannot choose what you want within an item/object
+    - uses BOOLEAN STATEMENTS whether to add the current value to the array
+- use `.map()` to retrieve the specific information that you want from the filter array that was created by `.filter()`.
 
 ### 3.What should I do differently next time?
-- 
+- Review notes more often
 
 ### 4.What still puzzles me, or what do I need to learn more about?
-- 
+- I need to study terminology to better understand/explain efficiently which will come in due time
 
