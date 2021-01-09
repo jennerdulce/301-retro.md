@@ -148,3 +148,55 @@
 ### 4.What still puzzles me, or what do I need to learn more about?
 - I need to study terminology to better understand/explain efficiently which will come in due time
 
+
+## Retro 7: SQL & Databases
+### 1. What went well, that I might forget if I don’t write down?
+- How to talk to databases
+    1. create a database
+        - `psql`
+        - `CREATE DATABASE database_name`
+    2. create `client` variable
+        - `const client = new pg.Client(process.env.DATABASE_URL)`
+    3. add .env file with a DATABASE_URL
+        - `DATABASE_URL = postgres://localhost5432/database_name`
+    4. create a schema.sql file
+        - this file creates a table within the database you connect to
+        ```
+        DROP TABLE IF EXISTS table_name
+        
+        CREATE TABLE table_name (
+            column1 datatype,
+            column1 datatype,
+            column1 datatype,
+            column1 datatype,
+        );
+        ```
+      
+    5. connect server to database
+        - psql -f schema.sql -d database_name
+        - will create the table
+    6. in server.js
+        - `client.on('error', err () => {throw err;})`
+        - ```client.connect()
+            .then( () => {
+                app.listen(PORT, () => {
+                    console.log(PORT)
+                    console.log(client.connectionParameters.database)```
+    7. PARTS TO MAKE A REQUEST TO THE DATABASE
+        - SQL variable: should contain a SQL statement
+        - safeValues variable: should contain values you want to insert into the SQL statement
+        - client.query(SQL, safeValues)
+           
+### 2. What did I learn today?
+- We want to add to the database during the API call.
+    - This makes sense because we already have the information from the promise, so we use that information to store the data and also repsond at the moment
+    - the next time we query for something, we will first go through the database, if it exists, it will pull the information from the database, if not, then the api call will run adding the information.
+ 
+ - you can use different values for .filter().
+    - you can set it to [], {}, 0, '',
+
+### 3.What should I do differently next time?
+- nothing, i am please with the results and growth this past week.
+
+### 4.What still puzzles me, or what do I need to learn more about?
+- starting to get a hang of the web request response cycle! all making sense.
