@@ -149,7 +149,7 @@
 - I need to study terminology to better understand/explain efficiently which will come in due time
 
 
-## Retro 7: SQL & Databases
+## Retro 8: SQL & Databases
 ### 1. What went well, that I might forget if I don’t write down?
 - How to talk to databases
     1. create a database
