@@ -204,11 +204,18 @@
 
 ## Retro 9: Refactoring and SQL
 ### 1. What went well, that I might forget if I don’t write down?
+- Refactoring is farily simple.
+- Sometimes API urls won't allow you to set query parameters in the URL or API Key.. 
+- use a `.set()` to set API Key as a header 
+- use `.query(queryList)` to attach the queryList
 
 ### 2. What did I learn today?
+- I learned how to impletment headers and queryLists to API requests using `.set()` and `.query()`
+- ALL APIs work differently, however reading the docs will give you the solution you need
 
 ### 3. What should I do differently next time?
+- Nothing in mind, Need to keep pushing and maybe push a little harder.
 
 ### 4. What still puzzles me, or what do I need to learn more about?
-
+- How the front-end makes the requests to the back end and how the front end sends data (an object which was passed to the front end) to the backend for further usage
 
