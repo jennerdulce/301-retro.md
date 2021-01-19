@@ -219,3 +219,78 @@
 ### 4. What still puzzles me, or what do I need to learn more about?
 - How the front-end makes the requests to the back end and how the front end sends data (an object which was passed to the front end) to the backend for further usage
 
+
+## Retro 10: Callstack and Debugging
+### 1. What went well, that I might forget if I don’t write down?
+- errors:
+  -reference, syntax, range
+- always console.log() to find bugs
+- can use the line `'debugger'` in any part of your code  
+  - using this line will display a call stack in the terminal
+- [object Object] means that the object was turned into a string and is no longer an object
+- `console.table()` if used on an object with properties, will give you a visual table representation on the terminal
+- `try .. catch(error)` sort of like a if else statement,
+  - if you make an error, code will continue to run without problems
+  ```
+  try {
+  // code block
+  }
+  
+  catch(error){
+  console.error(error);
+  return default_value_you_choose
+  }
+  ```
+
+### 2. What did I learn today?
+- starts with an empty call stack
+- invoking functions add them to the stack
+- once all of the code in a function is ran, remove the function from the call stack
+1. single threaded: one thing at a time
+2. synchronous
+3. function invocation creates a stack that temporarily occupies memory
+4. last in, first out
+- Call stack includes all functions, methods, object constructors etc..
+
+### 3. What should I do differently next time?
+- Try using a console.table()
+
+### 4. What still puzzles me, or what do I need to learn more about?
+- Not really anything
+
+
+## Retro 11: EJS
+### 1. What went well, that I might forget if I don’t write down?
+- To use EJS
+    1. `app.use(express.static('./public'));`
+    2. `app.set('view engine', 'ejs');` // starts searching for ejs files starting in the 'views' directory by default
+    3. create 'views' directory'
+        - when you `res.render()`automatically refers to views folder
+    4. when `res.render('ejsfilename' or 'filename.ejs')`
+
+- when using POST
+    - using post makes URL query private
+    1. `app.use(express.urlencoded({ extended: true }));` // decodes post files. using post makes files encrypted
+    2. `app.post()` instead of `app.get()`
+    3. in a form. `method="POST"`
+
+- when using GET
+    - using GET will show results of URL in browser
+    1. `app.get()`
+    2. in a form. `method="GET"`
+
+- You can concatenate strings to fill in the rest of the URL link depending on what you are searching for
+
+### 2. What did I learn today?
+- Today I learned about EJS (Embedded JavaScript). 
+- Routes are called which render EJS documents via filepath. 
+- EJS documents are practically HTML documents. However, you can embed javascript into these documents. 
+
+### 3. What should I do differently next time?
+- I was getting frustrated working with EJS and had trouble figuring out how it was all working. In times like this, I need to just take a step back and recollect my thoughts.
+- I forget to take breaks and end up working on code for hours straight.
+- Write down thoughts on the code on a paper
+- Do not get frustrated when you cannot find solutions. Calm and remember growth mindset
+
+### 4. What still puzzles me, or what do I need to learn more about?
+- Nothing really puzzling. Cannot wait to learn more about EJS!
