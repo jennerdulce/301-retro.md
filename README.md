@@ -294,3 +294,48 @@
 
 ### 4. What still puzzles me, or what do I need to learn more about?
 - Nothing really puzzling. Cannot wait to learn more about EJS!
+
+
+## Retro 12: Components
+### 1. What went well, that I might forget if I don’t write down?
+- passing extra information through a form via `<form action="books/<%= data.id %>` you are able to make a route dynamic
+- you can make a route/route handler dynamic where you can have 1 route to handle as many different data objects as you want! very powerful
+- to make a route dynamic:
+```
+form data:
+`<form action="books/<%= data.id %>`
+- data.id is unique
+
+corresponding route/handler:
+app.get/post('books/:name', eventHandler);
+- :name is where the value of data.id 
+- name can be named whatever you like
+- you can access this information by: req.params.name
+```
+- use the id passed as part of your SQL statement to retrieve the information with the unique id and then display the data
+- `<%- include('filepath to partial') %>`
+    - insert partial to other ejs files
+- you can create dummy table content by `seed.sql` and `psql -f seed.sql -d databaseName`
+- differences between `.redirect()` and `.render()`
+- .redirect() activates routes
+    - doing this, the route runs all the code as well as displays an ejs file
+- .render() renders ejs pages; typically require an object to import data into it
+
+### 2. What did I learn today?
+- it is important to DRY
+- make routes dynamic if need be
+- create partials to make your code cleaner
+
+#### Inserting
+- you can create a hidden form with preset values so that when they click a button or submit button, the request is sent with the information is passed to the route/handler.
+    - this information can be accessed by doing: `req.body.keyNames`
+- Use an `INSERT INTO tablename` statement to store the data into the database
+- do `.redirect('/')` to your home route
+ 
+
+### 3. What should I do differently next time?
+- I should definitely turn in assignments on time and not push them off.
+
+### 4. What still puzzles me, or what do I need to learn more about?
+- Nothing is puzzling me at the moment! rendering stuff VIA back-end is awesome!
+- wondering how to implement event handlers to make animations on EJS files instead of HTML files
