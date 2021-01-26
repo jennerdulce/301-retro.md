@@ -342,13 +342,34 @@ app.get/post('books/:name', eventHandler);
 
 ## Retro 13: Update/Delete
 ### 1. What went well, that I might forget if I don’t write down?
-- 
+- In order to use PUT or DELETE, must import methodOverride
+    1. `const methodOverride = require('method-override')`
+    2. `app.use(methodOverride('_method'))`
+    3. `app.delete()` or `app.put()`
+    4. in form data: `<form action="/route/?_method=PUT/DELETE" method="POST">
+        - `?_method=PUT/DELETE`
+        - method will alwys be post or get
+- Need corresponding SQL statements when dealing with PUT and DELETE
+- PUT
+```
+UPDATE books
+SET title = $1, 
+    author = $2,
+    description = $3,
+    thumbnail = $4, 
+    isbn = $5, 
+    bookshelf = $6 
+WHERE id = $7
+```
+- DELETE
+`DELETE FROM books WHERE id= $1`
 
 ### 2. What did I learn today?
-- 
+- PUT and DELETE need methodOverride to actually work.
 
 ### 3. What should I do differently next time?
-- 
+- Test code more often to see if code is breaking
+- I was building code without checking and found out that my code was not working and could not figure out why so I had to start over
 
 ### 4. What still puzzles me, or what do I need to learn more about?
-- 
+- How to JOIN tables as well as create username/passwords
