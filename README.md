@@ -92,7 +92,7 @@
 ### 1. What went well, that I might forget if I don’t write down?
 - .slice()
 - .split()
--.join()
+- .join()
 
 ### 2. What did I learn today?
 - That CSS can get very messy if you do not separate code into mutiple CSS files.
@@ -332,10 +332,23 @@ app.get/post('books/:name', eventHandler);
 - Use an `INSERT INTO tablename` statement to store the data into the database
 - do `.redirect('/')` to your home route
  
-
 ### 3. What should I do differently next time?
 - I should definitely turn in assignments on time and not push them off.
 
 ### 4. What still puzzles me, or what do I need to learn more about?
 - Nothing is puzzling me at the moment! rendering stuff VIA back-end is awesome!
 - wondering how to implement event handlers to make animations on EJS files instead of HTML files
+
+
+## Retro 13: Update/Delete
+### 1. What went well, that I might forget if I don’t write down?
+- 
+
+### 2. What did I learn today?
+- 
+
+### 3. What should I do differently next time?
+- 
+
+### 4. What still puzzles me, or what do I need to learn more about?
+- 
